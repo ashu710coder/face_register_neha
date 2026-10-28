@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #f4f6f8;
+
+    min-height: 100vh;
+
+}
+
+
+.container {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 30px auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+
+h1 {
+
+    text-align: center;
+
+    margin-bottom: 10px;
+
+}
+
+
+.subtitle {
+
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* Camera */
+
+.camera-container {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    margin: auto;
+
+    background: black;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+}
+
+
+#camera {
+
+    width: 100%;
+
+    display: block;
+
+}
+
+
+/* Buttons */
+
+.buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin: 25px 0;
+
+}
+
+
+button {
+
+    border: none;
+
+    padding: 15px 45px;
+
+    border-radius: 8px;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.in-btn {
+
+    background: green;
+
+}
+
+
+.out-btn {
+
+    background: red;
+
+}
+
+
+button:hover {
+
+    opacity: 0.85;
+
+}
+
+
+/* Employee Card */
+
+.employee-card {
+
+    background: #f7f7f7;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    margin-top: 20px;
+
+}
+
+
+.employee-card h2 {
+
+    margin-bottom: 15px;
+
+}
+
+
+.employee-card p {
+
+    margin: 8px 0;
+
+}
+
+
+/* Status */
+
+.status {
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin: 20px 0;
+
+    background: #eee;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+}
+
+
+/* Attendance */
+
+.attendance-section {
+
+    margin-top: 30px;
+
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+
+}
+
+
+th,
+td {
+
+    padding: 12px;
+
+    border: 1px solid #ddd;
+
+    text-align: center;
+
+}
+
+
+th {
+
+    background: #eee;
+
+}

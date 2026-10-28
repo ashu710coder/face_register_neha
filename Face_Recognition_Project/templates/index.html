@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Face Attendance System
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <h1>
+            Face Attendance System
+        </h1>
+
+        <p>
+            Face Registration & Attendance
+        </p>
+
+    </div>
+
+
+    <!-- REGISTRATION -->
+
+    <div class="card">
+
+        <h2>
+            Register Employee Face
+        </h2>
+
+
+        <div class="inputs">
+
+            <input
+                type="text"
+                id="employeeId"
+                placeholder="Employee ID"
+            >
+
+
+            <input
+                type="text"
+                id="employeeName"
+                placeholder="Employee Name"
+            >
+
+        </div>
+
+
+        <button
+            id="registerBtn"
+            class="register">
+
+            REGISTER FACE
+
+        </button>
+
+
+        <div
+            id="registerStatus"
+            class="status">
+
+            Enter Employee ID and Name
+
+        </div>
+
+
+        <div class="progress">
+
+            <div
+                id="progressBar">
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="progressText"
+            class="progress-text">
+
+            0 / 25
+
+        </div>
+
+    </div>
+
+
+    <!-- CAMERA -->
+
+    <div class="card">
+
+        <h2>
+            Live Camera
+        </h2>
+
+
+        <div class="camera-box">
+
+            <video
+                id="video"
+                autoplay
+                playsinline>
+            </video>
+
+            <canvas
+                id="canvas"
+                style="display:none;">
+            </canvas>
+
+
+            <div
+                id="faceBox"
+                class="face-box">
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="faceStatus"
+            class="face-status">
+
+            Starting camera...
+
+        </div>
+
+    </div>
+
+
+    <!-- ATTENDANCE -->
+
+    <div class="card">
+
+        <h2>
+            Attendance
+        </h2>
+
+
+        <div class="attendance-buttons">
+
+            <button
+                id="inBtn"
+                class="in">
+
+                MARK IN
+
+            </button>
+
+
+            <button
+                id="outBtn"
+                class="out">
+
+                MARK OUT
+
+            </button>
+
+        </div>
+
+
+        <div
+            id="attendanceStatus"
+            class="status">
+
+            Ready
+
+        </div>
+
+    </div>
+
+
+    <!-- EMPLOYEE -->
+
+    <div class="card">
+
+        <h2>
+            Recognized Employee
+        </h2>
+
+
+        <div class="employee-data">
+
+            <div>
+
+                <span>
+                    Employee ID
+                </span>
+
+                <strong
+                    id="recognizedId">
+
+                    -
+
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Name
+                </span>
+
+                <strong
+                    id="recognizedName">
+
+                    -
+
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Recognition Score
+                </span>
+
+                <strong
+                    id="recognizedScore">
+
+                    -
+
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script
+    src="{{ url_for('static', filename='script.js') }}">
+</script>
+
+
+</body>
+
+</html>
